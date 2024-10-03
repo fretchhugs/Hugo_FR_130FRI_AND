@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment"
+    android:padding="20dp">
+
+        <!-- ListView takes up the available space above the button -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/addContainer"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"/>
+
+        <!-- A container for EditText and Button -->
+        <LinearLayout
+            android:id="@+id/addContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="30dp">
+
+                <EditText
+                    android:id="@+id/addtsk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Add Task Here"
+                    android:inputType="text"/>
+
+                <Button
+                    android:id="@+id/addbtn"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add task"
+                    android:textSize="14sp"
+                    android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
