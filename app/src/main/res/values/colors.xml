@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pastel_description">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="pastel_background">#F7F3E7</color>
+    <color name="pastel_text">#3E4C6D</color>
+    <color name="pastel">#96AFF8</color>
+</resources>
