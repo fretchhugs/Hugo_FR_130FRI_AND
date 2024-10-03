@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/first_f"
+        android:title="Go to Another Fragment"
+
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/dialog_f"
+        android:title="Show Dialog"
+
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_f"
+        android:title="Exit App"
+
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/menu_exit_confirm"
+                android:title="Exit" />
+            <item
+                android:id="@+id/menu_exit_cancel"
+                android:title="Cancel" />
+        </menu>
+    </item>
+</menu>
